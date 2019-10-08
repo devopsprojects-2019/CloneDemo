@@ -9,7 +9,7 @@ node{
     withMaven(jdk: 'JDK-1.8', maven: 'maven-3.6.1') {
       sh 'mvn clean compile'
       }
-    
+    }
     stage('test'){
     
       withMaven(jdk:'JDK-1.8', maven: 'maven-3.6.1'){
