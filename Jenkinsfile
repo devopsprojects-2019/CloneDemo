@@ -2,7 +2,7 @@ node{
   
     stage('code checkout'){
       
-      git credentialsID: 'githubID, url: 'https://github.com/devopsprojects-2019/CloneDemo.git'
+      git credentialsID: 'githubID', url: 'https://github.com/devopsprojects-2019/CloneDemo.git'
      }
     
     stage('Build'){
