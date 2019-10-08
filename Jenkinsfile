@@ -6,7 +6,7 @@ node{
      }
     
     stage('Build') {
-    withMaven(jdk: 'jdk-1.8', maven: 'maven-3.6') {
+    withMaven(jdk: 'JDK-1.8', maven: 'maven-3.6.1') {
       sh 'mvn clean compile'
       }
     
