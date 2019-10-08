@@ -5,12 +5,10 @@ node{
       git credentialsID: 'githubID', url: 'https://github.com/devopsprojects-2019/CloneDemo.git'
      }
     
-    stage('Build'){
-    
-      withMaven(jdk:'JDK-1.8', maven: 'maven-3.6.1'){
+    stage('Build') {
+    withMaven(jdk: 'jdk-1.8', maven: 'maven-3.6') {
       sh 'mvn clean compile'
       }
-     }
     
     stage('test'){
     
