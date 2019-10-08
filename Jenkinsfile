@@ -14,7 +14,7 @@ node{
     
     stage('test'){
     
-      withMaven(jdk:'JDK-1.8, maven: 'maven-3.6.1'){
+      withMaven(jdk:'JDK-1.8', maven: 'maven-3.6.1'){
       sh 'mvn test'
       }
      }
